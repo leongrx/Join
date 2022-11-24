@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join - Login</title>
+  <link rel="stylesheet" href="../css/loginpage.css">
+  <link rel="stylesheet" href="../css/reponsive.css">
+  <script defer src="../js/login.js"></script>
+  <link rel="shortcut icon" href="../img/joinlogo.png" type="image/x-icon">
+</head>
+
+<body class="animate-in">
+  <main id="main-holder">
+    <h1 id="login-header">Login</h1>
+    <img src="../img/joinlogo.png">
+
+    <div id="login-error-msg-holder">
+      <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+    </div>
+
+    <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      <input type="submit" value="Login" id="login-form-submit" class="example">
+      <br>
+      <p class="login-guest-btn" id="login-guest">Login as Guest</p>
+      <br>
+      <br>
+      <p>Username: user <br> Password: web_dev</p>
+    </form>
+
+    <div class="modal">
+      <div class="modal-content">
+        <h2>You're logged in! </h2>
+        <button class="close-button" onclick="openJoin()">Let's go!</button>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
