@@ -20,6 +20,20 @@
   .taskForm-left {
     margin-left: 15px;
   }
+
+  .taskAccount-box {
+    min-width: none;
+    max-width: none;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 12px;
+  }
+
+  .taskForm-description textarea {
+    height: 469px;
+    width: 100%;
+    margin-top: 17px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -260,7 +274,25 @@
 
   .list-choice-title {
     font-size: 17px !important;
+  }
+
+  .taskAccount-box {
+    margin-left: 0;
+  }
+
+  .taskForm-account {
+    padding-left: 0;
+  }
+
 }
+
+@media (max-width: 700px) {
+
+  #main-holder {
+    width: 75%;
+    height: 85%;
+  }
+  
 }
 
 @media (max-width: 600px) {
@@ -298,7 +330,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 510px) {
 
   .taskForm {
     margin-left: 10px;
@@ -312,9 +344,10 @@
     max-width: 270px;
   }
 
-  .login-form-field {
-    width: 150px;
+  #main-holder {
+    width: 98%;
   }
+
 }
 
 @media (max-width: 450px) {
@@ -351,14 +384,7 @@
   .popUpWindow {
     width: 230px;
   }
-
-  .login-form-field {
-    width: 120px;
-  }
-
-  #login-form-submit {
-    width: 50%;
-  }
+  
 }
 
 @media (max-width: 300px) {
