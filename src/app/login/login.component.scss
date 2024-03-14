@@ -1,0 +1,259 @@
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.login-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  margin-bottom: 64px;
+
+  a {
+    text-decoration: none;
+    color: #42526e;
+
+    &:hover {
+      transition: all 225ms ease-in-out;
+      color: #3a8cff;
+    }
+  }
+}
+
+.login-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 64px 0 64px;
+
+  img {
+    width: 100px;
+  }
+
+  button {
+    border: none;
+    background-color: #3a8cff;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 16px;
+    margin-left: 16px;
+  }
+}
+
+.login-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.login-signUp-responsive {
+  display: none;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+
+  img {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.login-btn {
+  display: flex;
+  justify-content: space-between;
+  margin: 32px 0;
+  gap: 10px;
+
+  button {
+    background-color: #4589ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 35px 10px 35px;
+
+    &:hover {
+      transition: all 225ms ease-in-out;
+      cursor: pointer;
+      box-shadow: 0px 0px 10px 3px #00000014;
+      background-color: #377ae8;
+    }
+  }
+
+  button:nth-child(2) {
+    background-color: white;
+    color: #647188;
+    border: 1px solid #647188;
+    box-sizing: border-box;
+
+    &:hover {
+      color: #4589ff;
+      border-color: #4589ff;
+    }
+  }
+}
+
+.mat-mdc-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 652px;
+  height: 491px;
+  border-radius: 30px;
+  gap: 39px;
+  box-shadow: 0px 0px 10px 3px #00000014;
+  box-sizing: border-box;
+  margin: 0 32px;
+}
+
+.mat-mdc-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.mat-mdc-card-header {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+  flex-direction: column;
+  text-decoration: underline;
+  text-decoration-color: #3a8cff;
+  text-underline-offset: 16px;
+}
+
+::ng-deep .mdc-text-field {
+  overflow: unset !important;
+  padding: 0 16px 0 0 !important;
+}
+
+::ng-deep .mat-mdc-form-field-infix {
+  width: unset !important;
+
+  input {
+    padding: 12px 21px 12px 21px;
+  }
+
+  ::placeholder {
+    color: #d1d1d1 !important;
+  }
+}
+
+::ng-deep .mdc-form-field > label {
+  padding-left: 8px !important;
+}
+
+::ng-deep .mdc-checkbox {
+  color: #4589ff;
+}
+
+::ng-deep
+  .mdc-checkbox
+  .mdc-checkbox__native-control:enabled:not(:checked):not(:indeterminate):not(
+    [data-indeterminate="true"]
+  )
+  ~ .mdc-checkbox__background {
+  border-radius: 3px !important;
+}
+
+::ng-deep
+  .mdc-text-field--filled:not(.mdc-text-field--disabled)
+  .mdc-line-ripple::before {
+  border-bottom-width: 1px !important;
+  border-bottom-color: #d1d1d1 !important;
+}
+
+::ng-deep
+  .mdc-text-field--filled:not(.mdc-text-field--disabled)
+  .mdc-line-ripple::after {
+  border-bottom-width: 1px !important;
+  border-bottom-color: #3a8cff !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .login-header {
+    img {
+      width: 75px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .login-btn {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      width: 180px;
+      font-size: 16px;
+    }
+  }
+
+  .login-header {
+    margin: 20px 32px 0 32px;
+    span {
+      display: none;
+    }
+  }
+
+  .login-signUp-responsive {
+    position: absolute;
+    bottom: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 16px;
+
+    button {
+      border: none;
+      background-color: #3a8cff;
+      color: white;
+      border-radius: 8px;
+      font-size: 16px;
+      padding: 10px 16px;
+      margin-left: 16px;
+    }
+  }
+  ::ng-deep .mdc-form-field > label {
+    font-size: 16px;
+  }
+
+  .login-footer {
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .login-header {
+    margin: 20px 16px 0 16px;
+
+    img {
+      width: 64px;
+    }
+  }
+
+  .mat-mdc-card-header {
+    font-size: 42px;
+  }
+
+  .mat-mdc-card {
+    margin: 0 16px;
+  }
+
+  .login-footer {
+    font-size: 14px;
+  }
+}
