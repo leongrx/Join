@@ -1,1 +1,49 @@
-<p>signup works!</p>
+<section>
+  <div class="signup-card">
+    <mat-card>
+      <mat-card-header>
+        <a class="arrow-btn"><img src="./assets/img/arrow-left.svg" /></a>
+        <p>Sign up</p>
+        <p></p>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-form-field>
+          <div class="input-container">
+            <input type="input" matInput placeholder="Name" required />
+            <img src="./assets/img/person.svg" />
+          </div>
+        </mat-form-field>
+        <mat-form-field>
+          <div class="input-container">
+            <input type="email" matInput placeholder="Email" required />
+            <img src="./assets/img/mail.svg" />
+          </div>
+        </mat-form-field>
+        <mat-form-field>
+          <div class="input-container">
+            <input type="password" matInput placeholder="Password" required />
+            <img src="./assets/img/lock.svg" />
+          </div>
+        </mat-form-field>
+        <mat-form-field>
+          <div class="input-container">
+            <input
+              type="password"
+              matInput
+              placeholder="Confirm Password"
+              required
+            />
+            <img src="./assets/img/lock.svg" />
+          </div>
+        </mat-form-field>
+      </mat-card-content>
+      <mat-checkbox>I accept the <a href="">Privacy policy</a></mat-checkbox>
+    </mat-card>
+  </div>
+  <footer>
+    <div class="signup-footer">
+      <a href="">Privacy Policy</a>
+      <a href="">Legal Notice</a>
+    </div>
+  </footer>
+</section>

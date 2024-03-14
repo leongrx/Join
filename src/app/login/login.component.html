@@ -1,22 +1,22 @@
 <header>
   <div class="login-header">
     <img src="./assets/img/logo.svg" />
-    <span>Not a Join user? <button>Sign up</button></span>
+    <span>Not a Join user? <a href="signup">Sign up</a></span>
   </div>
 </header>
 <div class="login-card">
   <mat-card>
     <mat-card-header>Log in</mat-card-header>
     <mat-card-content>
-      <mat-form-field class="login-email">
+      <mat-form-field>
         <div class="input-container">
           <input type="email" matInput placeholder="Email" required />
-          <img src="./assets/img/mail.svg" alt="Icon" />
+          <img src="./assets/img/mail.svg" />
         </div>
       </mat-form-field>
       <mat-form-field>
         <div class="input-container">
-          <input matInput placeholder="Password" required />
+          <input type="password" matInput placeholder="Password" required />
           <img src="./assets/img/lock.svg" />
         </div>
       </mat-form-field>
@@ -28,7 +28,9 @@
     </mat-card-content>
   </mat-card>
 </div>
-<span class="login-signUp-responsive">Not a Join user? <button>Sign up</button></span>
+<span class="login-signUp-responsive"
+  >Not a Join user?<a href="signup">Sign up</a></span
+>
 <footer>
   <div class="login-footer">
     <a href="">Privacy Policy</a>
