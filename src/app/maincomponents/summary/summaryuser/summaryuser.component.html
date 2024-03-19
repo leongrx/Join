@@ -1,35 +1,54 @@
 <header>
-    <img class="summaryuser-logo" src="./assets/img/logo-white.svg">
-    <div class="summary-header-rightside">
-        <span>Kanban Project Management Tool</span>
-        <img class="summaryuser-help" src="./assets/img/help.svg">
-        <span>LG</span>
-    </div>
+  <img class="summaryuser-logo" src="./assets/img/logo-white.svg" />
+  <div class="summary-header-rightside">
+    <span>Kanban Project Management Tool</span>
+    <img class="summaryuser-help" src="./assets/img/help.svg" />
+    <span>LG</span>
+  </div>
 </header>
 <mat-drawer-container class="summaryuser-container">
   <mat-drawer mode="side" opened class="side-container">
     <div class="side-menu-container">
-        <div class="side-menu">
-            <img src="./assets/img/summary-icon.svg">
-            <span>Summary</span>
-        </div>
-        <div class="side-menu">
-            <img src="./assets/img/addTask-icon.svg">
-            <span>Add Task</span>
-        </div>
-        <div class="side-menu">
-            <img src="./assets/img/board-icon.svg">
-            <span>Board</span>
-        </div>
-        <div class="side-menu">
-            <img src="./assets/img/contacts-icon.svg">
-            <span>Contacts</span>
-        </div>
+      <div class="side-menu" tabindex="0">
+        <img src="./assets/img/summary-icon.svg" />
+        <span>Summary</span>
+      </div>
+      <div class="side-menu" tabindex="0">
+        <img src="./assets/img/addTask-icon.svg" />
+        <span>Add Task</span>
+      </div>
+      <div class="side-menu" tabindex="0">
+        <img src="./assets/img/board-icon.svg" />
+        <span>Board</span>
+      </div>
+      <div class="side-menu" tabindex="0">
+        <img src="./assets/img/contacts-icon.svg" />
+        <span>Contacts</span>
+      </div>
     </div>
     <div class="side-servicelinks">
-        <a href="">Privacy Policy</a>
-        <a href="">Legal notice</a>
+      <a href="">Privacy Policy</a>
+      <a href="">Legal notice</a>
     </div>
   </mat-drawer>
-  <mat-drawer-content>Main content</mat-drawer-content>
+  <mat-drawer-content>
+    <p class="summaryuser-greeting">Good morning, <span>Sofia Müller</span></p>
+    <div class="summaryuser-secondline">
+      <div class="summaryuser-secondline-left">
+        <div class="summaryuser-secondline-tasksurgent">
+          <div class="summaryuser-secondline-iconcontainer">
+            <img src="./assets/img/tasksUrgent-icon.svg" />
+            <span>1</span>
+          </div>
+          <p>Tasks Urgent</p>
+        </div>
+        <div class="summaryuser-secondline-right">
+            <span>October 16, 2022</span>
+            <p>Upcoming Deadline</p>
+        </div>
+      </div>
+      <div></div>
+    </div>
+    <div></div>
+  </mat-drawer-content>
 </mat-drawer-container>
