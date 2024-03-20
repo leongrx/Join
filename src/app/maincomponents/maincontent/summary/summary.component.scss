@@ -1,0 +1,142 @@
+$dark-blue: #005dff;
+$light-blue-hover: #3a8cff;
+$main-blue: #4589ff;
+$white: #ffffff;
+$grey: #42526e;
+$input-border: #d1d1d1;
+$grey-blue: #d2e3ff;
+$night-blue: #2a3647;
+
+$header-height: 96px;
+
+$transition: all 225ms ease-in-out;
+
+
+.summaryuser-secondline {
+  display: flex;
+  margin-top: 72px;
+  gap: 36px;
+}
+
+.summaryuser-greeting {
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $night-blue;
+
+  span {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $main-blue;
+  }
+}
+
+.summaryuser-secondline-tasksurgent {
+  display: flex;
+  flex-direction: column;
+  border-right: 3px solid $white;
+  gap: 9px;
+  padding-right: 35px;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    img {
+      width: 65px;
+      border: 3px solid $white;
+      border-radius: 100%;
+    }
+
+    span {
+      font-size: 48px;
+      font-weight: 700;
+    }
+  }
+}
+
+.summaryuser-secondline-deadline {
+  display: flex;
+  flex-direction: column;
+  padding-left: 35px;
+
+  span {
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 39.6px;
+  }
+
+  p {
+    font-size: 23px;
+    line-height: 27.6px;
+  }
+}
+
+.summaryuser-secondline-blue {
+  display: flex;
+  align-items: center;
+  padding: 28px 48px;
+  background-color: $main-blue;
+  border-radius: 30px;
+  color: $white;
+  overflow: hidden;
+
+  &:hover {
+    cursor: pointer;
+    border-top-left-radius: 0px;
+    transform: scale(1.05);
+    background-color: $white;
+    color: $main-blue;
+    box-shadow: 0px 0px 4px 0px #00000029;
+    transition: transform 225ms ease-in-out;
+
+    .summaryuser-secondline-tasksurgent {
+      border-color: $main-blue;
+    }
+  }
+}
+
+.summaryuser-taskinboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-width: 1px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 4px 0px #00000029;
+  padding: 40px;
+  transition: transform 225ms ease-in-out;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  span {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  &:hover {
+    cursor: pointer;
+    border-top-left-radius: 0px;
+    transform: scale(1.05);
+    background-color: $dark-blue;
+    color: $white;
+    box-shadow: 0px 0px 4px 0px #00000029;
+
+    .taskinboard-img {
+      border: 3px solid $white;
+      border-radius: 100%;
+    }
+  }
+}

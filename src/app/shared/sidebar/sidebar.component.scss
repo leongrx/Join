@@ -1,0 +1,82 @@
+$dark-blue: #005dff;
+$light-blue-hover: #3a8cff;
+$main-blue: #4589ff;
+$white: #ffffff;
+$grey: #42526e;
+$input-border: #d1d1d1;
+$grey-blue: #d2e3ff;
+$night-blue: #2a3647;
+
+$header-height: 96px;
+
+$transition: all 225ms ease-in-out;
+
+::ng-deep app-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: calc(100vh - #{$header-height});
+    padding: 38px 0 66px 0;
+    width: 232px;
+}
+
+.side-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  color: $grey;
+}
+
+.side-menu {
+  display: flex;
+  align-items: center;
+  width: 186px;
+  border-radius: 8px;
+  gap: 9px;
+  padding: 6.5px 0;
+
+  img {
+    width: auto;
+    height: 24px;
+    margin-left: 31px;
+  }
+
+  &:hover {
+    transition: all 225ms ease-in-out;
+    cursor: pointer;
+    background-color: $grey-blue;
+  }
+
+  &:focus {
+    transition: all 225ms ease-in-out;
+    background-color: $grey-blue;
+  }
+}
+
+.side-servicelinks {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  a {
+    color: $grey;
+    text-decoration: none;
+    padding: 8px;
+    margin-left: 48px;
+
+    &:hover {
+      transition: $transition;
+      cursor: pointer;
+      color: $light-blue-hover;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+$dark-blue: #005dff;
+$light-blue-hover: #3a8cff;
+$main-blue: #4589ff;
+$white: #ffffff;
+$grey: #42526e;
+$input-border: #d1d1d1;
+$grey-blue: #d2e3ff;
+$night-blue: #2a3647;
+
+$header-height: 96px;
+
+$transition: all 225ms ease-in-out;
+
+
+.mat-drawer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mat-drawer-container {
+    height: calc(100vh - #{$header-height});
+    background-color: unset;
+  }

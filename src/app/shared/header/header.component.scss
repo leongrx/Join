@@ -1,0 +1,55 @@
+$dark-blue: #005dff;
+$light-blue-hover: #3a8cff;
+$main-blue: #4589ff;
+$white: #ffffff;
+$grey: #42526e;
+$input-border: #d1d1d1;
+$grey-blue: #d2e3ff;
+$night-blue: #2a3647;
+
+$header-height: 96px;
+$transition: all 225ms ease-in-out;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $main-blue;
+  height: $header-height;
+
+  span {
+    color: $white;
+  }
+
+  span:nth-of-type(2) {
+    border-radius: 100%;
+    border: 1px solid $white;
+    padding: 15px;
+    max-width: 56px;
+    max-height: 56px;
+    background-color: $white;
+    color: $main-blue;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.summaryuser-logo {
+    width: 46px;
+    margin-left: 20px;
+  }
+  
+  .summary-header-rightside {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 20px;
+  
+    img {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
