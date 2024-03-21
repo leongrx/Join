@@ -9,13 +9,73 @@ $night-blue: #2a3647;
 
 $header-height: 96px;
 
-$transition: all 225ms ease-in-out;
+$transition: all 125ms ease-in-out;
 
+::ng-deep app-summary {
+  display: flex;
+  flex-direction: column;
+}
 
 .summaryuser-secondline {
   display: flex;
   margin-top: 72px;
   gap: 36px;
+}
+
+.summary-thirdline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.summary-taskcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 4px 0px #00000029;
+  border-radius: 30px;
+  width: 204px;
+  height: 183px;
+  box-sizing: border-box;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  span {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-left: 15px;
+  }
+
+  p {
+    max-width: 128px;
+    text-overflow: clip;
+    text-align: center;
+  }
+
+  &:hover {
+    transition: $transition;
+    cursor: pointer;
+    border-top-left-radius: 0px;
+    transform: scale(1.05);
+    background-color: $dark-blue;
+    color: $white;
+    box-shadow: 0px 0px 4px 0px #00000029;
+
+    img {
+      border: 3px solid $white;
+      border-radius: 100%;
+    }
+  }
 }
 
 .summaryuser-greeting {
@@ -24,6 +84,7 @@ $transition: all 225ms ease-in-out;
   letter-spacing: 0em;
   text-align: left;
   color: $night-blue;
+  text-align: center;
 
   span {
     font-size: 64px;
@@ -41,6 +102,7 @@ $transition: all 225ms ease-in-out;
   border-right: 3px solid $white;
   gap: 9px;
   padding-right: 35px;
+  margin-left: 46px;
 
   div {
     display: flex;
@@ -63,11 +125,14 @@ $transition: all 225ms ease-in-out;
   display: flex;
   flex-direction: column;
   padding-left: 35px;
+  margin-right: 46px;
 
   span {
     font-size: 33px;
     font-weight: 700;
-    line-height: 39.6px;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
   }
 
   p {
@@ -85,6 +150,13 @@ $transition: all 225ms ease-in-out;
   color: $white;
   overflow: hidden;
 
+  p {
+    font-size: 23px;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
   &:hover {
     cursor: pointer;
     border-top-left-radius: 0px;
@@ -96,47 +168,6 @@ $transition: all 225ms ease-in-out;
 
     .summaryuser-secondline-tasksurgent {
       border-color: $main-blue;
-    }
-  }
-}
-
-.summaryuser-taskinboard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-width: 1px;
-  border-radius: 30px;
-  box-shadow: 0px 0px 4px 0px #00000029;
-  padding: 40px;
-  transition: transform 225ms ease-in-out;
-
-  div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-
-  span {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 58px;
-    letter-spacing: 0em;
-    text-align: center;
-  }
-
-  &:hover {
-    cursor: pointer;
-    border-top-left-radius: 0px;
-    transform: scale(1.05);
-    background-color: $dark-blue;
-    color: $white;
-    box-shadow: 0px 0px 4px 0px #00000029;
-
-    .taskinboard-img {
-      border: 3px solid $white;
-      border-radius: 100%;
     }
   }
 }
