@@ -13,11 +13,13 @@ $transition: all 125ms ease-in-out;
 
 ::ng-deep app-summary {
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 
-.summaryuser-secondline {
+.summary-secondline {
   display: flex;
+  justify-content: center;
   margin-top: 72px;
   gap: 36px;
 }
@@ -27,7 +29,17 @@ $transition: all 125ms ease-in-out;
   justify-content: center;
   align-items: center;
   gap: 32px;
-  margin-top: 32px;
+  margin: 32px 16px 0 16px;
+  flex-wrap: wrap;
+}
+
+.task-todo {
+  background-color: $grey-blue;
+
+  &:hover {
+    background-color: $white !important;
+    color: $main-blue !important;
+  }
 }
 
 .summary-taskcontainer {
@@ -78,7 +90,7 @@ $transition: all 125ms ease-in-out;
   }
 }
 
-.summaryuser-greeting {
+.summary-greeting {
   font-size: 48px;
   line-height: 58px;
   letter-spacing: 0em;
@@ -96,7 +108,7 @@ $transition: all 125ms ease-in-out;
   }
 }
 
-.summaryuser-secondline-tasksurgent {
+.summary-secondline-tasksurgent {
   display: flex;
   flex-direction: column;
   border-right: 3px solid $white;
@@ -121,7 +133,7 @@ $transition: all 125ms ease-in-out;
   }
 }
 
-.summaryuser-secondline-deadline {
+.summary-secondline-deadline {
   display: flex;
   flex-direction: column;
   padding-left: 35px;
@@ -141,7 +153,7 @@ $transition: all 125ms ease-in-out;
   }
 }
 
-.summaryuser-secondline-blue {
+.summary-secondline-blue {
   display: flex;
   align-items: center;
   padding: 28px 48px;
@@ -166,8 +178,21 @@ $transition: all 125ms ease-in-out;
     box-shadow: 0px 0px 4px 0px #00000029;
     transition: transform 225ms ease-in-out;
 
-    .summaryuser-secondline-tasksurgent {
+    .summary-secondline-tasksurgent {
       border-color: $main-blue;
     }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .summary-secondline {
+    flex-wrap: wrap;
+  }
+
+  .task-todo {
+    width: 100%;
+    max-width: 673px;
+    flex-direction: row;
+    max-height: 115px;
   }
 }
