@@ -94,6 +94,10 @@ $transition: all 125ms ease-in-out;
       font-weight: 700;
     }
   }
+
+  p {
+    text-align: center;
+  }
 }
 
 .summary-secondline-deadline {
@@ -183,5 +187,63 @@ $transition: all 125ms ease-in-out;
     max-width: 673px;
     flex-direction: row;
     max-height: 115px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .summary-secondline-blue {
+    padding: 14px 0;
+    p {
+      font-size: 19px;
+      line-height: 28px;
+    }
+
+    .summary-secondline-tasksurgent {
+      margin-left: 23px;
+      padding-right: 20px;
+      span {
+        font-size: 40px;
+      }
+    }
+    .summary-secondline-deadline {
+      margin-right: 23px;
+      padding-left: 20px;
+      span {
+        font-size: 23px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  .task-todo {
+    max-width: 394.5px;
+  }
+
+  .summary-greeting {
+    p {
+      font-size: 33px;
+      line-height: 50px;
+    }
+    
+    span {
+      font-size: 47px;
+      line-height: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .summary-secondline-blue {
+    .summary-secondline-tasksurgent {
+      margin-left: 15px;
+      padding-right: 15px;
+    }
+    .summary-secondline-deadline {
+      margin-right: 15px;
+      padding-left: 15px;
+    }
   }
 }
