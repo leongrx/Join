@@ -1,0 +1,97 @@
+$dark-blue: #005dff;
+$light-blue-hover: #3a8cff;
+$main-blue: #4589ff;
+$white: #ffffff;
+$grey: #42526e;
+$input-border: #d1d1d1;
+$grey-blue: #d2e3ff;
+$night-blue: #2a3647;
+
+:host {
+  width: 100%;
+}
+
+form {
+  width: 488px;
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+  padding: 20px;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #42526e;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+  width: calc(100% - 10px);
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #d1d1d1;
+  color: #42526e;
+  outline: none;
+}
+
+input[type="text"] {
+  font-size: 32px;
+}
+
+input[type="text"]::placeholder {
+  font-size: 32px;
+}
+
+textarea {
+  border-radius: 4px;
+  border-color: #d1d1d1;
+  min-width: 440px;
+  min-height: 103px;
+  outline: none;
+}
+
+button {
+  padding: 16px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"] {
+  border: none;
+  background-color: $main-blue;
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: $dark-blue;
+}
+
+button[type="button"] {
+  background-color: $white;
+  color: grey;
+  border: 1px solid #647188;
+  margin-right: 25px;
+
+  img {
+    width: 11px;
+  }
+}
+
+button[type="button"]:hover {
+  background-color: #f2f2f2;
+}
+
+.addtask-buttons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}

@@ -38,3 +38,22 @@
   font-weight: 800;
   src: url("./assets/font/open-sans-v40-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+::-webkit-scrollbar {
+  width: 10px; /* Breite der Scrollleiste */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #4589FF; /* Hintergrundfarbe des Scrollbar-Tracks */
+}
+
+::-webkit-scrollbar-thumb {
+height: 60px;
+  background-color: #4589FF; /* Farbe des Scrollbar-Daumens */
+  border-radius: 5px; /* Abgerundete Ecken für den Scrollbar-Daumen */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2a3647; /* Farbe des Scrollbar-Daumens bei Hover */
+  cursor: pointer;
+}

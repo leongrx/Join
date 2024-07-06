@@ -26,29 +26,27 @@ $header-height: 96px;
   display: flex;
   flex-direction: column;
   padding: 15px 0;
+  cursor: pointer; 
+}
 
-  &:hover {
-    filter: invert(53%) sepia(83%) saturate(3765%) hue-rotate(204deg)
-      brightness(102%) contrast(103%);
-  }
-  img {
-    height: 24px;
-    &:focus {
-      filter: invert(53%) sepia(83%) saturate(3765%) hue-rotate(204deg)
-        brightness(102%) contrast(103%);
-    }
-  }
+.side-menu-responsive:hover {
+  filter: invert(53%) sepia(83%) saturate(3765%) hue-rotate(204deg) brightness(102%) contrast(103%);
+}
 
-  span {
-    &:focus {
-      filter: invert(53%) sepia(83%) saturate(3765%) hue-rotate(204deg)
-        brightness(102%) contrast(103%);
-    }
-  }
+.side-menu-responsive:focus-within {
+  filter: invert(53%) sepia(83%) saturate(3765%) hue-rotate(204deg) brightness(102%) contrast(103%);
+}
 
-  &:hover {
-    cursor: pointer;
-  }
+.side-menu-responsive img {
+  height: 24px;
+}
+
+.side-menu-responsive img:focus {
+  filter: invert(53%) sepia(83%) saturate(3765%) hue-rotate(204deg) brightness(102%) contrast(103%);
+}
+
+.side-menu-responsive span:focus {
+  filter: invert(53%) sepia(83%) saturate(3765%) hue-rotate(204deg) brightness(102%) contrast(103%);
 }
 
 @media screen and (max-width: 500px) {

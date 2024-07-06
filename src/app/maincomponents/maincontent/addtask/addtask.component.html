@@ -1,1 +1,58 @@
-<p>addtask works!</p>
+<div class="addtask-container">
+  <form [formGroup]="taskForm" (ngSubmit)="createTask()">
+    <div>
+      <input
+        placeholder="Enter a title"
+        type="text"
+        id="title"
+        formControlName="title"
+        required
+      />
+    </div>
+
+    <div>
+      <label for="description">Description <span style="font-weight: normal">(optional)</span></label>
+      <textarea
+        placeholder="Enter a Description"
+        id="description"
+        formControlName="description"
+      ></textarea>
+    </div>
+
+    <div>
+      <label for="date">Due date</label>
+      <input type="date" id="date" formControlName="date" required />
+    </div>
+
+    <div>
+      <label for="priority">Priority</label>
+      <select id="priority" formControlName="priority" required>
+        <option value="">Bitte wählen</option>
+        <option value="low" style="color: green;">Low</option>
+        <option value="medium" style="color: orange;">Medium</option>
+        <option value="high" style="color:red;">High</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="assignedTo">Assigned to <span style="font-weight: normal">(optional)</span></label>
+      <select id="assignedTo" formControlName="assignedTo" required>
+        <option value="">Select contacts to assign</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="category">Category</label>
+      <select id="category" formControlName="category">
+        <option value="">Select task category</option>
+        <option value="Ticket">Ticket</option>
+        <option value="Change Request">Change Request</option>
+        <option value="SDO">SDO</option>
+      </select>
+    </div>
+  </form>
+  <div class="addtask-buttons">
+    <button type="button" (click)="clearForm()">Clear <img src="./assets/img/clear.svg"></button>
+    <button type="submit">Create Task <img src="./assets/img/check.svg"></button>
+  </div>
+</div>
