@@ -8,28 +8,43 @@
   </div>
   <div class="board-column">
     <div class="board">
-      <span>To do <img src="./assets/img/plusbutton.svg"/></span>
-      <div class="board-empty">
+      <span>To do <img src="./assets/img/plusbutton.svg" /></span>
+      <!-- <div class="board-empty">
         <span>No tasks To do</span>
+      </div> -->
+      <div class="board-value" (click)="openBoard()">
+        <div class="board-category">Ticket</div>
+        <div class="board-title">Eviatec - Ticket #00001</div>
+        <div class="board-description">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam
+        </div>
+        <div class="board-info">
+          <div class="board-contact">LG</div>
+          <span>Medium</span>
+        </div>
       </div>
     </div>
     <div class="board">
       <span>In progress <img src="./assets/img/plusbutton.svg" /></span>
-      <div class="board-empty">
+      <!-- <div class="board-empty">
         <span>No tasks In progress</span>
-      </div>
+      </div> -->
     </div>
     <div class="board">
       <span>Await feedback <img src="./assets/img/plusbutton.svg" /></span>
-      <div class="board-empty">
+      <!-- <div class="board-empty">
         <span>No tasks Await feedback</span>
-      </div>
+      </div> -->
     </div>
     <div class="board">
       <span>Done <img src="./assets/img/plusbutton.svg" /></span>
-      <div class="board-empty">
+      <!-- <div class="board-empty">
         <span>No tasks Done</span>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>
+
+
